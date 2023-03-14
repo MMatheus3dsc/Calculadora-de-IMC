@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    /*  */
+    background-color: #e4fdedc5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+.hide{
+    /*  */
+    display: none !important ;
+}
+.container{
+    /*  */
+    min-height: 400px;
+    min-width: 400px;
+    background-color:#044643;
+    border-radius: 7px;
+    border: none;
+    padding: 3rem;
+}
+
+/*imc-form*/ 
+
+#calc-container h2{
+    /*centralizando o titulo e dando seu devido espaçamento  */
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff9f9;
+    font-family: 'Tilt Prism', cursive
+}
+.form-inputs{
+    /* direcionando a caixa dos inputs altura e largura para coluna e dando um espaço entre eles  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-control{
+    /* direcionando os inputs altura e largura para coluna e dando um espaço entre eles */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+.form-control label{
+    /* destacando o texto da label e dando espaçamento  */
+    font-weight: bold;
+    font-family: 'Tilt Prism', cursive;
+    margin-bottom: .6rem;
+    color : rgb(255, 255, 255);
+}
+.form-control input{
+    /* os campos de texto das labels altura e peso */
+    padding: 1rem 0.5rem;
+    border-radius: 7px;
+    border: none;
+    
+}
+.action-control{
+ /* os botoes */
+display: flex;
+justify-content: space-between;
+margin-top: 2rem;
+gap: 1rem;
+}
+button{
+/* os botoes */
+text-transform: uppercase;
+padding: 1rem 1.5rem;
+background-color: #f0d890;
+border: none;
+border-radius: 7px;
+color: #000000;
+cursor: pointer;
+flex: 1;
+}
+button :hover{
+    /* os botoes */
+    opacity: 5;
+}
+#clear-btn{
+    /* os botoes */
+    background-color:#ae2f27;
+    color: #fff;
+}
+/* table data && reader*/
+#result{
+    text-align: center;
+    
+}
+#imc-result{
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+
+}
+#imc-info{
+    font-size: 1.4rem;
+    
+}
+#result h3{
+    margin-top: 1rem;
+  
+}
+#result{
+    display: flex;
+    flex-direction: column;
+}
+#imc-table{
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+    
+}
+.table-reader{
+    font-weight: bold;
+    color: #f8f5f5;
+   
+}
+.table-reader, .table-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+}
+.table-reader, h4 , .table-data p{
+flex: 1;
+}
+.table-reader h4:nth-child(3), .table-data p:nth-child(3){
+ max-width: 80px;
+}
+
+#back-btn{
+   align-self: center ;
+}
+#more-info{
+    color: #fff;
+    padding: 7px;
+}
+.good{
+    color: #12db34;
+}
+.low{
+    color: #dbce12;
+}
+.medium{
+    color: #db6212;
+}
+.high{
+    color: #db1912;
+}

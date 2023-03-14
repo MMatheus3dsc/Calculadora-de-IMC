@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+ 
+
+</head>
+<body>
+   
+    
+
+ <main class="container"  >
+    <div id="calc-container"  >
+        <h2>Calculadora de IMC</h2>
+        <form id="imc-form">
+            <div class="form-inputs"></div>
+            <div class="form-control">
+                <label for="height">Altura:</label>
+                <input 
+                  type="text"
+                  name="height"
+                  id="height"
+                  placeholder="Exemplo 1,68" 
+                  autofocus required maxlength="5">
+            </div>
+            
+            <div class="form-control">
+               <label for="weight">Peso:</label>
+               <input 
+               type="text" 
+               name="weight"
+               id="weight"
+               placeholder="Exemplo 40,5" required maxlength ="5">
+            </div>
+            
+            
+           <div class="action-control">
+            <button id="calc-btn" type="button"  autocomplete="off" >Calcular</button>
+            <button id="clear-btn" type="button" autocomplete="off" >Limpar</button>
+           </div> 
+            
+        </form>
+    </div>
+    
+    <div id="result" class="hide" > 
+        <p id="imc-result" >Seu IMC é : <span ></span></p>
+        <p id="imc-info">Situação atual : <span ></span></p>
+        <h3>veja as classificações ideais:</h3>
+        <div id="imc-table">
+            <div class="table-reader">
+                <h4>IMC</h4>
+                <h4>Classificação</h4>
+                <h4>Obesidade</h4>   
+            </div>
+        </div>
+        <button id="back-btn" type="button">voltar</button>
+        <a href="/Informações.html"><P id="more-info">Saiba mais</P></a>
+    </div>
+ </main>
+
+
+
+<script src="js/main.js" defer >
+        //
+ </script>
+</body>
+</html>
